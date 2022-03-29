@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f4css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Twincities-London&Tokyo</title>
+</head>
+<!--This is a twincity website of London and Tokyo, it show the location of attraction places on map and 
+        displays basic informations and current&forcast weathers.-->
+<body>
+
+<!--ignore, not part of coursework requirement-->    
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">09:00 <span id="am-pm">PM</span></div>
+                <div class="date" id="date">Monday, 18 November</div>
+                <div class="others" id="current-weather-items"></div>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Manila</div>
+                <div id="country" class="country">PHI</div>
+            </div>
+        </div>
+    </div>
+    
+<!--London map-->
+    <div class="row no-gutters" >
+        <div class="col-md-6 no-gutters">
+          <div class="leftside">
+
+            <h2>London</h2>
+
+          </div>
+          
+                    
+    </div>
+
+<!--London Weather API-todays's weather-->
+    <div class="weatherApplication">
+        <div class="currentWeather" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            
+        </div>
+
+<!--future weather forecast-->
+        <div class="futureWeather" id="weather-forecast">
+            <div class="weatherForecast">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+
+<!--Tokyo map API--> 
+    <div class="col-md-6 no-gutters">
+        <div class="rightside">
+
+            <h2>Tokyo</h2>
+
+    </div>
+       
+    </div>
+
+<!--Tokyo weather API-->
+    <div class="weatherApplication2">
+        
+<!--Tokyo today's weather-->
+
+        <div class="currentWeather2" id="current-temp2">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other2">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+        </div>
+
+<!--Tokyo's forecast weather-->
+
+        <div class="futureWeather2" id="weather-forecast2">
+            <div class="weatherForecast2">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast2">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast2">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast2">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+            <div class="weatherForecast2">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 18&#176; C</div>
+                <div class="temp">Day - 18&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="f4js1.js"></script>
+</body>
+</html>

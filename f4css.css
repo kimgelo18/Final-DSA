@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+.leftside, .rightside {
+    height: 100vh;
+    width:100%;
+}
+
+.leftside{
+    background-color:antiquewhite;
+}
+
+.rightside{
+    background-color:rgb(180, 201, 201);}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+    
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:scroll;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+/*Ignore, not part of coursework requirement*/
+.container{
+    padding: 20px 70px;
+    color:#fff;
+    width: 30%;
+    height:15%;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    bottom:0;
+    right: 0;
+}
+
+.date-container{
+    font-weight: 100;
+}
+
+.date-container .time{
+    font-size: 30px;
+}
+
+.date-container #am-pm{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 20px;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;   
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+/*London weather API CSS Styles*/
+.weatherApplication {
+    background: rgba(15, 31, 182, 0.8);
+    position: fixed;
+    bottom: 0;
+    display: block;
+    color:white;
+    width: 49.5%;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    left:0;
+    
+}
+
+/*London weather API CSS Styles- today's weather*/
+.weatherApplication .currentWeather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(57, 80, 4, 0.205); 
+}
+
+.weatherApplication .currentWeather .day{
+    padding: 5px 5px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weatherApplication .currentWeather.temp{
+    font-size: 10px;
+    padding-top: 5px;
+}
+/*London weather API CSS Styles- future weather*/
+.weatherApplication .futureWeather {
+    display: flex;
+    
+}
+
+.weatherApplication .weatherForecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1px;
+    border: 1px solid #eee;
+    padding: 1px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+    font-size: 55px;
+    
+}
+
+.futureWeather .weatherForecast .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.futureWeather .weatherForecast .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/*Tokyo weather API CSS Styles*/
+.weatherApplication2 {
+    background: rgba(3, 223, 120, 0.8);
+    position: fixed;
+    bottom: 0;
+    display: block;
+    color:white;
+    width: 49.5%;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    right:0;
+    
+}
+/*Tokyo weather API CSS Styles- today's weather*/
+.weatherApplication2 .currentWeather2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(57, 80, 4, 0.205);
+    
+    
+}
+
+.weatherApplication2 .currentWeather2 .day{
+    padding: 5px 5px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weatherApplication2 .currentWeather2 .temp{
+    font-size: 15px;
+    padding-top: 5px;
+}
+/*London weather API CSS Styles- future weather*/
+.weatherApplication2 .futureWeather2 {
+    display: flex;
+    
+}
+
+.futureWeather2 .weatherForecast2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1px;
+    border: 1px solid #eee;
+    padding: 1px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+    font-size: 55px;
+    
+}
+
+.futureWeather2 .weatherForecast2 .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.futureWeather2 .weatherForecast2 .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+
+/*Responsive CSS- Individual Assignment 19046244*/
+
+@media screen and(min-width:1000px){
+    .leftside,.rightside{
+      height: 100vh;
+    }
+        
+  }
+  
+@media only screen and (max-width: 730px){
+    .weatherApplication{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        
+    }
+    .weatherApplication2{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    
+    .container{
+        padding: 20px;
+    }
+    
+    .weatherApplication .currentWeather .temp{
+        font-size: 16px;
+    }
+    
+    .date-container .time{
+        font-size: 50px;
+    }
+    
+    .date-container #am-pm{
+        font-size: 20px;
+    }
+    
+    .date-container .date{
+        font-size: 20px;
+    }
+    
+    .place-container{
+        text-align: end;
+        margin-top: 15px;
+    }
+    
+    .place-container .time-zone{
+        font-size: 20px;
+    }
+    
+    .current-info .others{
+        padding: 12px;
+    }
+    
+    .current-info .others .weather-item{
+        font-size: 14px;
+    }
+    
+}
+    
